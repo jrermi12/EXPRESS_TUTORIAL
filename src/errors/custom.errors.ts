@@ -20,7 +20,8 @@ export enum ErrorCode {
     TOO_MANY_REQUEST = 1006,
     BAD_REQUEST= 1007,
     UNAUTHENTICATED_USER= 1008,
-
+    TOKEN_NOT_FOUND=1009,
+    TOKEN_EXPIRE=1010
    
 
 }

@@ -3,14 +3,16 @@ import { EnvConfig, envSchema } from '../validation/env.validation';
 import { ZodError } from 'zod';
 dotenv.config();
 
-export const MONGO_DB_CONNECTION = process.env.MONGO_DB_URI;
 export const validateEnv = () => {
   try {
     const envVars: EnvConfig = envSchema.parse(process.env);
     return {
       port: +envVars.PORT,
       env: envVars.NODE_ENV,
-      MONGO_DB_URI: envVars.MONGO_DB_URI
+      MONGO_DB_URI: envVars.MONGO_DB_URI,
+      jwtconfig: {
+        accessSecret: envVars.JWT
+      }
     };
   } catch (error) {
     let message = undefined;
