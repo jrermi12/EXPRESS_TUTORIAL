@@ -11,7 +11,8 @@ export const validateEnv = () => {
       env: envVars.NODE_ENV,
       MONGO_DB_URI: envVars.MONGO_DB_URI,
       jwtconfig: {
-        accessSecret: envVars.JWT
+        accessSecret: envVars.JWT, 
+        refreshaccessSecret: envVars.JWT_REFRESH,
       }
     };
   } catch (error) {
