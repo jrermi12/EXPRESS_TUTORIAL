@@ -1,0 +1,26 @@
+{
+  "name": "express_tutorial",
+  "version": "1.0.0",
+  "description": "This is a comprenshive guide of express backend tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrermi12/EXPRESS_TUTORIAL.git"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "Ermias Asmare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrermi12/EXPRESS_TUTORIAL/issues"
+  },
+  "homepage": "https://github.com/jrermi12/EXPRESS_TUTORIAL#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.4.1"
+  }
+}
