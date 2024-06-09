@@ -19,6 +19,8 @@ export enum ErrorCode {
     INTERNAL_SERVER = 1005,
     TOO_MANY_REQUEST = 1006,
     BAD_REQUEST= 1007,
+    UNAUTHENTICATED_USER= 1008,
+
    
 
 }
