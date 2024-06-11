@@ -7,7 +7,8 @@ import { createUser, findUserByEmail } from "../../services/user.services";
 import { ErrorCode } from "../../errors/custom.errors";
 import { getAllRole } from "../../services/role.services";
 import { registerUserInput} from "../../validation/auth.validation"
-import { sendMail } from "../../utils/sendMail";
+import { EventEmitterInstance } from "../../config/event-emitter";
+
 //@desc signup
 //@method POST  /auth/signup
 //@access public
@@ -32,7 +33,7 @@ export const registerUser = asyncHandler(async (req: Request<object, object, reg
     // Generate OTP code
     const code = generateRandom6DigitString();
     const verificationExpires = parseInt(process.env.VERIFICATION_CODE_EXP ?? "30", 10) * 1000 * 60;
-  
+    console.log("am here")
     // Create the user
     await createUser({
       ...req.body,
@@ -41,15 +42,10 @@ export const registerUser = asyncHandler(async (req: Request<object, object, reg
       OTPCode: code,
       OTPCodeExpires: Date.now() + verificationExpires,
     });
-  
-    await sendMail({
-      email: email,
-      subject: "Email verification",
-      template: "emailVerification.mails.ejs",
-      data: {
-        user: req.body.name,
-        code,
-      },
-    });
+    EventEmitterInstance.emit('signup', { code, name, email });
     res.status(201).json({ success: true, message: 'Verification email sent' })
   })
+
+
+
+ 

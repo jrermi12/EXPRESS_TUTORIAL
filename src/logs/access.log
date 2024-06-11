@@ -3,3 +3,29 @@
  POST /auth/register 404 23.071 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:17:30 GMT 
  POST /api/auth/register 201 3156.422 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:17:43 GMT
  POST /api/auth/register 201 7819.696 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:21:06 GMT
+ POST /userauth/register 404 15.588 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 09:57:15 GMT 
+ POST /api/userauth/register 404 11.777 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 09:59:37 GMT 
+ POST /api/auth/register 201 672.760 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 09:59:55 GMT
+ POST /api/auth/register 201 941.901 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:09:22 GMT
+ POST /api/auth/register 201 1118.097 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:20:13 GMT
+ POST /api/role/create 404 21.664 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:24:02 GMT 
+ POST /api/role/ 201 993.825 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:24:07 GMT
+ POST /api/auth/register 201 949.164 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:24:56 GMT
+ POST /api/auth/register 201 546.922 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:26:01 GMT
+ POST /api/auth/register 201 678.466 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:26:52 GMT
+ POST /api/auth/register 201 1229.805 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:27:55 GMT
+ POST /api/auth/activate 201 844.578 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 10:31:19 GMT
+ POST /api/auth/forgotPassword 201 968.925 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:17:43 GMT
+ POST /api/auth/forgotPassword 201 832.370 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:19:35 GMT
+ POST /api/auth/forgotPassword 201 896.758 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:22:00 GMT
+ POST /api/auth/resetPassword 500 433.991 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:27:50 GMT 
+ POST /api/auth/forgotPassword 201 818.183 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:28:52 GMT
+ POST /api/auth/resetPassword 500 372.913 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:29:17 GMT 
+ POST /api/auth/resetPassword 500 439.758 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:30:35 GMT 
+ POST /api/auth/resetPassword 500 389.098 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:31:36 GMT 
+ POST /api/auth/resetPassword 200 1017.788 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:31:53 GMT
+ POST /api/auth/login 500 695.431 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:42:49 GMT 
+ POST /api/auth/login 500 533.364 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:43:18 GMT 
+ POST /api/auth/login 200 1117.285 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:43:46 GMT
+ POST /api/auth/changePassword 404 6.226 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:52:20 GMT 
+ POST /api/auth/changePassword 200 1855.489 ms PostmanRuntime/7.37.3 Tue, 11 Jun 2024 11:52:53 GMT

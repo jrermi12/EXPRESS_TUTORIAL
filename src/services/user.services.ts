@@ -37,7 +37,9 @@ export async function findUser(
 
 export async function createUser(userData: Partial<IUser>) {
     try {
+        console.log("am here 2")
         const result = await UserModel.create(userData);
+        console.log("result", result)
         return { data: result, success: true };
     } catch (error) {
         return { data: null, success: false, error };

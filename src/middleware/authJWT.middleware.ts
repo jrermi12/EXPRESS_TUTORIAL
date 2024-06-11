@@ -37,7 +37,8 @@ export const AuthJWT = (
       if (!userWithPermission) throw new NotFoundError("User not found", ErrorCode.NOT_FOUND)
       req.userData = {
         userId: decodeData?.userId,
-        permission: userWithPermission?.role?.permissions
+        permission: userWithPermission?.role?.permissions,
+        role:userWithPermission.role
       }
       next();
     });
