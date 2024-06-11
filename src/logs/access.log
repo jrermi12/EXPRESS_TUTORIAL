@@ -1,0 +1,5 @@
+ POST /api/role/ 201 731.981 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 19:51:01 GMT
+ POST /api/role/ 201 504.079 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 19:53:54 GMT
+ POST /auth/register 404 23.071 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:17:30 GMT 
+ POST /api/auth/register 201 3156.422 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:17:43 GMT
+ POST /api/auth/register 201 7819.696 ms PostmanRuntime/7.37.3 Sun, 09 Jun 2024 20:21:06 GMT

@@ -12,7 +12,7 @@ const userSchema = new Schema<IUser>({
     type: String,
     unique: true, // Assuming email should be unique
     validate: {
-      validator: function(v: string) {
+      validator: function (v: string) {
         // Example: Validate if the phone number follows a specific format
         return /\d{3}-\d{3}-\d{4}/.test(v);
       },
@@ -24,7 +24,7 @@ const userSchema = new Schema<IUser>({
     required: [true, 'Email is required'],
     unique: true, // Assuming email should be unique
     validate: {
-      validator: function(v: string) {
+      validator: function (v: string) {
         // Example: Validate if the email follows a specific format
         return /\S+@\S+\.\S+/.test(v);
       },
@@ -59,3 +59,6 @@ const userSchema = new Schema<IUser>({
 }, { timestamps: true });
 
 export default model<IUser>('User', userSchema);
+
+
+

@@ -2,12 +2,15 @@ import { FilterQuery, QueryOptions, UpdateQuery } from "mongoose";
 import {IRole} from "../interface/roles.interface";
 import RoleModel from "../model/role.model";
 
-export async function getAllRoles() {
+export async function getAllRole() {
     return await RoleModel.find();
 }
 
 export async function findRoleById(id: string) {
     return await RoleModel.findById(id);
+}
+export async function findRoleByName(name: string) {
+    return await RoleModel.findOne({ name: name });
 }
 
 export async function findRole(
@@ -17,7 +20,7 @@ export async function findRole(
     return await RoleModel.findOne(query, {}, options);
 }
 
-export async function createRole(roleData: Partial<IRole>) {
+export async function createRoles(roleData: Partial<IRole>) {
     try {
         const result = await RoleModel.create(roleData);
         return { data: result, success: true };
