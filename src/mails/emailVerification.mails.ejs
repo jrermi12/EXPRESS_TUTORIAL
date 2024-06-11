@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .email-header {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+            margin: 0;
+        }
+        p {
+            color: #666;
+            text-align: left;
+        }
+        .verification-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="email-header">
+            Email Verification Code
+        </div>
+        <p>Dear <%= user %></p>
+        <p>Your email verification code is: <%= code %></p>
+        <p>Please use this code to complete the verification process. If you did not request this code, please ignore this email.</p>
+        <p>Thank you,</p>
+        <p>The SQUARE PLATFORM</p>
+        <div class="footer">
+            &copy; <%= new Date().getFullYear() %>. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
